@@ -13,7 +13,7 @@ public class LaunchBrowser {
 	public void executeTest() {
 		
 		try {
-			
+			DesiredCapabilities capability;
 			capability = DesiredCapabilities.chrome();
 			System.setProperty("webdriver.chrome.driver", "C:\\Users\\c5245770\\Downloads\\chromedriver.exe");
 			//driver = new ChromeDriver();
