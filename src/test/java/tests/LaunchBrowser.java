@@ -14,7 +14,7 @@ public class LaunchBrowser {
 		
 		try {
 			
-			System.setProperty("webdriver.chrome.driver", "C:\Users\c5245770\Downloads");
+			System.setProperty("webdriver.chrome.driver", "C:/Users/c5245770/Downloads");
 			driver = new ChromeDriver();
 			driver.get("https://google.com");
 			driver.manage().window().maximize();
