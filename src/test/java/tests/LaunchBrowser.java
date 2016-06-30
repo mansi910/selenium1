@@ -13,14 +13,15 @@ public class LaunchBrowser {
 	public void executeTest() {
 		
 		try {
-			 		
+			
+			System.setProperty("webdriver.chrome.driver", "C:\Users\c5245770\Downloads");
 			driver = new ChromeDriver();
-		  	driver.get("https://google.com");
-		 	driver.manage().window().maximize();
-		 	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS); 			 		
-		 	driver.quit();
+			driver.get("https://google.com");
+			driver.manage().window().maximize();
+			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS); 			 		
+			driver.quit();
 
-		 	
+
 		} catch (Exception e) {
 			 e.printStackTrace();
 		}
