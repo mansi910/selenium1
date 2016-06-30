@@ -10,17 +10,16 @@ import org.testng.annotations.Test;
 
 
 public class LaunchBrowser {
-	private WebDriver driver;
+	private static WebDriver driver;
 	
 	@Test
 	public void executeTest() {
 		
 		try {
-			//DesiredCapabilities capability;
-			//capability = DesiredCapabilities.chrome();
+			DesiredCapabilities capability;
+			capability = DesiredCapabilities.chrome();
 			System.setProperty("webdriver.chrome.driver", "C:\\Users\\c5245770\\Downloads\\chromedriver.exe");
-			driver = new ChromeDriver();
-			//driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capability);	
+			driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capability);	
 			//driver = new ChromeDriver();
 		  	driver.get("https://google.com");
 		 	driver.manage().window().maximize();
