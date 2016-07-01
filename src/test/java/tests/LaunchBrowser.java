@@ -18,7 +18,7 @@ public class LaunchBrowser {
 		try {
 			DesiredCapabilities capability;
 			capability = DesiredCapabilities.chrome();
-			System.setProperty("webdriver.chrome.driver", "C:\\Users\\c5245770\\Downloads\\chromedriver.exe");
+			//System.setProperty("webdriver.chrome.driver", "C:\\Users\\c5245770\\Downloads\\chromedriver.exe");
 			driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capability);	
 			//driver = new ChromeDriver();
 		  	driver.get("https://google.com");
