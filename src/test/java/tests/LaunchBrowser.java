@@ -20,7 +20,7 @@ public class LaunchBrowser {
 			capability = DesiredCapabilities.chrome();
 			capability.setBrowserName("chrome");
 			//System.setProperty("webdriver.chrome.driver", "C:\\chromedriver_win32\\chromedriver.exe");
-			driver = new RemoteWebDriver(new URL("http://10.207.87.244:4444/wd/hub"), capability);	
+			driver = new RemoteWebDriver(new URL("http://10.54.139.115:4444/wd/hub"), capability);	
 			//driver = new ChromeDriver();
 		  	driver.get("https://google.com");
 		 	driver.manage().window().maximize();
